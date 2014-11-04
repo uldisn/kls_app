@@ -98,7 +98,9 @@ $mainConfig = array(
         'vendor.dbrisinajumi.d2person.*',                
         'vendor.dbrisinajumi.d2person.models.*',                
         'vendor.dbrkls.edifactdata.*',                
-        'vendor.dbrkls.edifactdata.models.*',                
+        'vendor.dbrkls.edifactdata.models.*',        
+        'vendor.uldisn.ace.*', 
+        'vendor.uldisn.ace.widgets.*',         
     ),
     'modules'    => array(
         'edifactdata' => array(
