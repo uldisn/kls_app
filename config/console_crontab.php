@@ -45,7 +45,7 @@ $consoleConfig = array(
             'class' => 'vendor.schmunk42.database-command.EDatabaseCommand',
         ),
         'ReadTerminalPop3' => array(
-            'class' => 'vendor.dbrsvn.edifactdata.commands.ReadTerminalPop3Command',
+            'class' => 'vendor.dbrkls.edifactdata.commands.ReadTerminalPop3Command',
         ),
     ),
     'params'     => 

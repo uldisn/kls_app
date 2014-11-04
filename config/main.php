@@ -97,19 +97,19 @@ $mainConfig = array(
         'vendor.bwoester.yii-event-interceptor.*',
         'vendor.dbrisinajumi.d2person.*',                
         'vendor.dbrisinajumi.d2person.models.*',                
-        'vendor.dbrsvn.edifactdata.*',                
-        'vendor.dbrsvn.edifactdata.models.*',                
+        'vendor.dbrkls.edifactdata.*',                
+        'vendor.dbrkls.edifactdata.models.*',                
     ),
     'modules'    => array(
         'edifactdata' => array(
-            'class' => 'vendor.dbrsvn.edifactdata.EdifactDataModule',
+            'class' => 'vendor.dbrkls.edifactdata.EdifactDataModule',
         ),        
         'session' => array (
             'sessionName' => 'kods',
             'cookieMode' => 'only',
-            'class' => 'system.web.CDbHttpSession',
-            'connectionID' => 'db',
-            'sessionTableName' => 's_sessions',
+//            'class' => 'system.web.CDbHttpSession',
+//            'connectionID' => 'db',
+//            'sessionTableName' => 's_sessions',
         ),
         'wiki' => array(
             'class' => 'vendor.dbrisinajumi.yeeki.WikiModule',
@@ -132,16 +132,16 @@ $mainConfig = array(
             ),
             'defaultController' => 'ccmpCompany',
         ),//++
-        'd1files' => array(
-             'class' => 'vendor.dbrisinajumi.d1files.D1filesModule',
-             'upload_dir' => 'root.eu_upload',
-             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx)$/i',
-        ),          
-        'd2files' => array(
-             'class' => 'vendor.dbrisinajumi.d2files.D2filesModule',
-             'upload_dir' => 'root.upload.d2files_' . basename(dirname($applicationDirectory)) . '_' . basename($applicationDirectory),
-             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx|htm)$/i',
-        ),
+//        'd1files' => array(
+//             'class' => 'vendor.dbrisinajumi.d1files.D1filesModule',
+//             'upload_dir' => 'root.eu_upload',
+//             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx)$/i',
+//        ),          
+//        'd2files' => array(
+//             'class' => 'vendor.dbrisinajumi.d2files.D2filesModule',
+//             'upload_dir' => 'root.upload.d2files_' . basename(dirname($applicationDirectory)) . '_' . basename($applicationDirectory),
+//             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx|htm)$/i',
+//        ),
         'email' => array(
             // path to the EmailModule class
             'class' => 'vendor.cornernote.yii-email-module.email.EmailModule',
