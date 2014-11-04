@@ -16,6 +16,7 @@
         "vitalets/x-editable-yii": "dev-master",
         "uldisn/ace": "dev-master",
         "dbrisinajumi/d2person": "dev-master",
-        "dbrisinajumi/yeeki": "dev-master"
+        "dbrisinajumi/yeeki": "dev-master",
+        "dbrkls/edifactdata": "dev-master"
      }    
 }
