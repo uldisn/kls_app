@@ -23,7 +23,7 @@ $baseUrl              = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SE
 // main application configuration
 $mainConfig = array(
     'basePath'   => $applicationDirectory,
-    'name'       => 'CB',
+    'name'       => 'KLS EDI',
     'theme'      => 'frontend', // theme is copied eg. from vendor/p3bootstrap
     'language'   => 'en', // default language, see also components.langHandler
     'preload'    => array(
@@ -40,10 +40,6 @@ $mainConfig = array(
         // componentns
         'bootstrap'                            => 'vendor.clevertech.yiibooster.src',
         'editable'                             => 'vendor.vitalets.x-editable-yii',
-        // p3widgets
-        //'jsonEditorView'                       => 'vendor.phundament.p3extensions.widgets.jsonEditorView',
-        //'ckeditor'                             => 'vendor.phundament.p3extensions.widgets.ckeditor',
-        // p3media
         'jquery-file-upload'                   => 'vendor.phundament.jquery-file-upload',
         'jquery-file-upload-widget'            => 'vendor.phundament.p3extensions.widgets.jquery-file-upload',
         'swiftMailer' => 'vendor.swiftmailer.swiftmailer.lib',
@@ -71,21 +67,14 @@ $mainConfig = array(
         'audittrail.behaviors.*', //++
         'vendor.schmunk42.relation.behaviors.*', //++
         'vendor.dbrisinajumi.d2company.models.*', //++
-        'vendor.dbrisinajumi.fcrn.models.*', //++
-        'vendor.uldisn.fuel.models.*', //++
         'vendor.dbrisinajumi.d2company.*',
         'vendor.dbrisinajumi.DbrLib.*',
-        'vendor.dbrisinajumi.tlbexcelview.*',
         'vendor.pentium10.yii-remember-filters-gridview.src.protected.components.*',
         'vendor.pentium10.yii-clear-filters-gridview.src.protected.components.*',
         'vendor.dbrisinajumi.d2company.components.*',
         'vendor.dbrisinajumi.d1status.models.*',
-        'vendor.dbrisinajumi.finv.models.*',
-        'vendor.dbrisinajumi.finv.*',
-        'vendor.dbrisinajumi.d1status.components.*',
 		'vendor.uldisn.yii-user.models.*',
 		'vendor.uldisn.yii-user.components.*',
-		'vendor.dbrisinajumi.yii-jqplot.*',
         'vendor.dbrisinajumi.d1files.models.*',        
         'vendor.dbrisinajumi.d2files.models.*',        
         'vendor.dbrisinajumi.d2files.widgets.*', // shared classes
@@ -165,17 +154,15 @@ $mainConfig = array(
             'yiiStrapPath' => realpath($applicationDirectory . '/../../../vendor/crisu83/yiistrap'),
         ),        
         
-//        'ckeditorConfigurator' => array(
-//            'class' => 'vendor.schmunk42.ckeditor-configurator.CkeditorConfiguratorModule',
-//        ),
+
         'rights'               => array(
             'class'        => 'vendor.crisu83.yii-rights.RightsModule',
             'appLayout'    => '//layouts/_main',
             'userIdColumn' => 'id',
             'userClass'    => 'User',
             'cssFile'      => '/themes/backend/css/yii-rights.css',
-            #'install' => true, // Enables the installer.,
-            'superuserName' => 'Administrator',
+            #'install' => true, // Enables the installer.
+            'superuserName' => 'Administrator'
         ),
 		'user' => array(
 			'class' => 'vendor.uldisn.yii-user.UserModule',
@@ -190,12 +177,35 @@ $mainConfig = array(
 				'buttonColumn' => 'TbButtonColumn',
 			),
 			'defaultDetailView' => array(
-				'path'=>'TbDetailView',
-				'options'=>array(),
+				'path'=>'TbAceDetailView',
+				'options'=>array(
+                    'label_width' => 140,
+                ),
 			),
-            'UserAdminRoles' => array('Accounting','Cars','DataCards','Finance','FuelOperator','UserAdmin','InvoiceEdit','InvoiceView',),
+            'UserAdminRoles' => array(
+                'Agent',
+                'UserAdmin',
+                'audittrail',
+                'Lawyer',
+                'Manager',
+                'Client',
+                'Accountant',
+                'Administrator',
+			),
             'layout' =>'//layouts/ace',
             'view' => 'vendor.uldisn.ace.yii-user.views',            
+            'SecurityPolicy' => array(
+                'denyGuest'        => true,         // Allow guest to access only login page
+                'denyIpChanges'    => true,         // Logout if IP changed during session
+                'denyUaChanges'    => true,         // Logout if User Agent changed during session
+                'denyMultiSession' => true,         // Disable multiple sessions for the same user
+                'useIpTables'      => false,         // Check User access in uxip_user_x_ip_table
+                //'denyGuestExcept'  => array(        // Exceptions for denyGuest
+                //    'cbpromo/promo/validateCode',
+                //    'cbpromo/promo/list',
+                //    'cbpromo/promo/finish',
+                //)
+            ),
 		),
         'audittrail' => array(//++
             'class' => 'vendor.dbrisinajumi.audittrail.AudittrailModule', 
