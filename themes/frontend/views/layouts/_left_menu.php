@@ -36,28 +36,41 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', array(
                 array(
                     'label' => Yii::t('D2personModule.model', 'Persons Document Types'),
                     'url' => array('/d2person/pdcmDocumentType'),
-                    'visible' => Yii::app()->user->checkAccess('Administrator'),
+                    'visible' => false,
                 ),
                 array(
                     'label' => Yii::t('D2personModule.model', 'Person Types'),
                     'url' => array('/d2person/ptypType'),
-                    'visible' => Yii::app()->user->checkAccess('Administrator'),
+                    'visible' => false,
                 ),
                 array(
                     'label' => Yii::t('D2personModule.model', 'Contact Types'),
                     'url' => array('/d2person/pcntContactType'),
-                    'visible' => Yii::app()->user->checkAccess('Administrator'),
+                    'visible' => false,
                 ),
                 array(
                     'label' => Yii::t('dbr_app', 'Users'),
                     'url' => array('/user/admin'),
                     'visible' => Yii::app()->user->checkAccess('UserAdmin'),
                 ),
+                array(
+                    'label' => Yii::t('dbr_app', 'Calendar'),
+                    'url' => array('/d2calendar/cledCalendarExceptionDates'),
+                    //'visible' => Yii::app()->user->checkAccess('UserAdmin'),
+                ),
             )
         ),
         array(
+            'label' => Yii::t('dbr_app', 'EDI data'),
+            'url' => array('/edifactdata/edifactData'),
+        ),        
+        array(
+            'label' => Yii::t('dbr_app', 'Termina prices'),
+            'url' => array('/edifactdata/etprTerminalPrices'),
+        ),        
+        array(
             'label' => Yii::t('dbr_app', 'Office'),
-            'visible' => Yii::app()->user->checkAccess('Administrator'),
+            'visible' => false,
             'icon' => 'building',
             'items' => array(
                 array(

@@ -101,8 +101,13 @@ $mainConfig = array(
         'vendor.dbrkls.edifactdata.models.*',        
         'vendor.uldisn.ace.*', 
         'vendor.uldisn.ace.widgets.*',         
+        'vendor.dbrisinajumi.d2calendar.*',                
+        'vendor.dbrisinajumi.d2calendar.models.*',         
     ),
     'modules'    => array(
+        'd2calendar'=> array( 
+            'class' => 'vendor.dbrisinajumi.d2calendar.D2calendarModule',
+        ),        
         'edifactdata' => array(
             'class' => 'vendor.dbrkls.edifactdata.EdifactDataModule',
         ),        

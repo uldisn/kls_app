@@ -64,6 +64,7 @@ $consoleConfig = array(
                 'core_main'               => 'application.migrations_init2',
                 'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //8
                 'edifactdata'             => 'vendor.dbrkls.edifactdata.migrations',     
+                'd2calendar'              => 'vendor.dbrisinajumi.d2calendar.migrations',           
                 //'d1files'                 => 'vendor.dbrisinajumi.d1files.migrations',    //8 for d2companies
                 //no ready for init 'd2tasks'                 => 'vendor.dbrisinajumi.d2tasks.migrations',    //9
                 //no ready for init 'd2finv'                  => 'vendor.dbrisinajumi.d2finv.migrations',
