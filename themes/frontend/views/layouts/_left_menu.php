@@ -65,8 +65,12 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', array(
             'url' => array('/edifactdata/edifact'),
         ),        
         array(
-            'label' => Yii::t('dbr_app', 'Containers'),
+            'label' => Yii::t('dbr_app', 'Container movings'),
             'url' => array('/edifactdata/ecntContainer'),
+        ),        
+        array(
+            'label' => Yii::t('dbr_app', 'Containers'),
+            'url' => array('/edifactdata/ecprContainerProcesing'),
         ),        
         array(
             'label' => Yii::t('dbr_app', 'Termina prices'),
