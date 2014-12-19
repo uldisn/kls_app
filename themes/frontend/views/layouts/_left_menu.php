@@ -77,6 +77,11 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', array(
             'url' => array('/edifactdata/etprTerminalPrices'),
         ),        
         array(
+            'label' => Yii::t('dbr_app', 'Alerts'),
+            'icon' => 'icon-warning-sign',
+            'url' => array('/edifactdata/ecerErrors'),
+        ),        
+        array(
             'label' => Yii::t('dbr_app', 'Office'),
             'visible' => false,
             'icon' => 'building',
