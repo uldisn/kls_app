@@ -58,29 +58,39 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', array(
                     'url' => array('/d2calendar/cledCalendarExceptionDates'),
                     //'visible' => Yii::app()->user->checkAccess('UserAdmin'),
                 ),
+                array(
+                    'label' => Yii::t('dbr_app', 'Termina prices'),
+                    'icon' => 'icon-money',
+                    'url' => array('/edifactdata/etprTerminalPrices'),
+                ),                        
             )
         ),
         array(
-            'label' => Yii::t('dbr_app', 'EDI data'),
-            'url' => array('/edifactdata/edifact'),
-        ),        
-        array(
-            'label' => Yii::t('dbr_app', 'Container movings'),
-            'url' => array('/edifactdata/ecntContainer'),
-        ),        
-        array(
-            'label' => Yii::t('dbr_app', 'Containers'),
-            'url' => array('/edifactdata/ecprContainerProcesing'),
-        ),        
-        array(
-            'label' => Yii::t('dbr_app', 'Termina prices'),
-            'url' => array('/edifactdata/etprTerminalPrices'),
+            'label' => Yii::t('dbr_app', 'Dashboard'),
+            'icon' => 'icon-dashboard',
+            'url' => array('/edifactdata/dashboard'),
         ),        
         array(
             'label' => Yii::t('dbr_app', 'Alerts'),
             'icon' => 'icon-warning-sign',
             'url' => array('/edifactdata/ecerErrors'),
+        ),           
+        array(
+            'label' => Yii::t('dbr_app', 'Container movings'),
+            'icon' => 'icon-exchange',
+            'url' => array('/edifactdata/ecntContainer'),
         ),        
+        array(
+            'label' => Yii::t('dbr_app', 'Containers'),
+            'icon' => 'th-large',
+            'url' => array('/edifactdata/ecprContainerProcesing'),
+        ),        
+        array(
+            'label' => Yii::t('dbr_app', 'EDI files'),
+            'icon' => 'icon-paperclip',
+            'url' => array('/edifactdata/edifact'),
+        ),        
+    
         array(
             'label' => Yii::t('dbr_app', 'Office'),
             'visible' => false,
