@@ -172,6 +172,7 @@ $mainConfig = array(
 			'allowGuestRegister' => FALSE,
 			'showUserList' => FALSE,
 			'allowUserEditProfile' => FALSE,
+            'returnUrl' => array("/edifactdata/dashboard"),
 			'defaultGridView' => array(
 				'path'=>'TbGridView',
 				'options'=>array(),
