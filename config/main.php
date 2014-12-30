@@ -486,6 +486,22 @@ $mainConfig = array(
     // application-level parameters that can be accessed
     // using Yii::app()->params['paramName']
     'params'     => array(
+        'cyprus_data_export_options' => array(
+            'terminal_alt_codes' => array(
+                'RIXCT'  => 'LVRIXCY01',
+                'RIXBCT' => 'LVRIXCY03',
+            ),
+            'movment_times' => array(
+                'LV' => '15:00',
+                'TF' => '18:00',
+                'VF' => '22:00',
+                'VE' => '22:00',
+                'DF' => '07:00',
+                'DE' => '07:00',
+                'LD' => '08:00',
+                'TE' => '12:00',
+            ),
+        ),
         'ccgr_group_sys_company'   => 1,        
         // this is used in contact page
         'adminEmail'                => 'webmaster@example.com',
