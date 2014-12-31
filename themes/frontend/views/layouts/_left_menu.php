@@ -124,9 +124,9 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', array(
             'visible' => Yii::app()->user->checkAccess('Reports'),
             'items' => array(
                 array(
-                    'label' => Yii::t('dbr_app', 'Cyprus'),
-                    'url' => array('/edifactdata/Report/cyprus'),
-                    'visible' => Yii::app()->user->checkAccess('Reports'),
+                    'label' => Yii::t('dbr_app', 'Status of day'),
+                    'url' => array('/edifactdata/Report/Day'),
+                    //'visible' => Yii::app()->user->checkAccess('Reports'),
                 ),
 
             )
