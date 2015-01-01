@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 1, 2015, 12:38:24 PM
+    Author     : edmunds
+*/
+
+
+.row_localvaning , .row_localdevaning{
+    
+    background-color: #DAF5D7;
+}
+
+.row_terminalfull , .row_terminalempty {
+    
+     background-color: #F1FAC0;
+}
+
+.row_vesselfull, .row_vesselempty {
+    
+     background-color: #C0E7FA;
+}
+
+.row_dischfull, .row_dischempty {
+    
+     background-color: #FAD8C0;
+}
+
+.label_20dry {
+    
+     background-color: #A7F2B0 !important;
+}
+
+.label_40dry {
+    
+     background-color: #8BC1F7 !important;
+}
+
+.label_40high {
+    
+     background-color: #F79E8B !important;
+}
+
+
