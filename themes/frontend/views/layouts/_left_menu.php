@@ -54,39 +54,39 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', array(
                     'visible' => Yii::app()->user->checkAccess('UserAdmin'),
                 ),
                 array(
-                    'label' => Yii::t('dbr_app', 'Calendar'),
+                    'label' => Yii::t('D2calendarModule.model', 'Calendar'),
                     'url' => array('/d2calendar/cledCalendarExceptionDates'),
                     //'visible' => Yii::app()->user->checkAccess('UserAdmin'),
                 ),
                 array(
-                    'label' => Yii::t('dbr_app', 'Termina prices'),
+                    'label' => Yii::t('EdifactDataModule.model', 'Terminal Prices'),
                     'icon' => 'icon-money',
                     'url' => array('/edifactdata/etprTerminalPrices'),
                 ),                        
             )
         ),
         array(
-            'label' => Yii::t('dbr_app', 'Dashboard'),
+            'label' => Yii::t('EdifactDataModule.model', 'Dashboard'),
             'icon' => 'icon-dashboard',
             'url' => array('/edifactdata/dashboard'),
         ),        
         array(
-            'label' => Yii::t('dbr_app', 'Alerts'),
+            'label' => Yii::t('EdifactDataModule.model', 'Alerts'),
             'icon' => 'icon-warning-sign',
             'url' => array('/edifactdata/ecerErrors'),
         ),           
         array(
-            'label' => Yii::t('dbr_app', 'Container movings'),
+            'label' => Yii::t('EdifactDataModule.model', 'Containers Moving'),
             'icon' => 'icon-exchange',
             'url' => array('/edifactdata/ecntContainer'),
         ),        
         array(
-            'label' => Yii::t('dbr_app', 'Containers'),
+            'label' => Yii::t('EdifactDataModule.model', 'Containers'),
             'icon' => 'th-large',
             'url' => array('/edifactdata/ecprContainerProcesing'),
         ),        
         array(
-            'label' => Yii::t('dbr_app', 'EDI files'),
+            'label' => Yii::t('EdifactDataModule.model', 'EDI files'),
             'icon' => 'icon-paperclip',
             'url' => array('/edifactdata/edifact'),
         ),        
@@ -124,7 +124,7 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', array(
             'visible' => Yii::app()->user->checkAccess('Reports'),
             'items' => array(
                 array(
-                    'label' => Yii::t('dbr_app', 'Status of day'),
+                    'label' => Yii::t('EdifactDataModule.model', 'Status of day'),
                     'url' => array('/edifactdata/Report/Day'),
                     //'visible' => Yii::app()->user->checkAccess('Reports'),
                 ),
