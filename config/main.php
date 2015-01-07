@@ -92,7 +92,8 @@ $mainConfig = array(
         'vendor.uldisn.ace.*', 
         'vendor.uldisn.ace.widgets.*',         
         'vendor.dbrisinajumi.d2calendar.*',                
-        'vendor.dbrisinajumi.d2calendar.models.*',         
+        'vendor.dbrisinajumi.d2calendar.models.*', 
+         'vendor.dbrkls.edifact.src.EDI.*',
     ),
     'modules'    => array(
         'd2calendar'=> array( 
@@ -488,8 +489,8 @@ $mainConfig = array(
     'params'     => array(
         'cyprus_data_export_options' => array(
             'terminal_alt_codes' => array(
-                'RIXCT'  => 'LVRIXCY01',
-                'RIXBCT' => 'LVRIXCY03',
+                'RIXCT'  => 'LVRIXCY03',
+                'RIXBCT' => 'LVRIXCY01',
             ),
             'movment_times' => array(
                 'LV' => '15:00',
