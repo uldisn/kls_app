@@ -78,8 +78,8 @@ $mainConfig = array(
         'vendor.dbrisinajumi.d1files.models.*',        
         'vendor.dbrisinajumi.d2files.models.*',        
         'vendor.dbrisinajumi.d2files.widgets.*', // shared classes
-        'vendor.cornernote.yii-email-module.email.models.*',
-        'vendor.cornernote.yii-email-module.email.components.*',
+//        'vendor.cornernote.yii-email-module.email.models.*',
+//        'vendor.cornernote.yii-email-module.email.components.*',
         'vendor.dbrisinajumi.person.models.*',        
         'vendor.dbrisinajumi.person.PersonModule',        
         'vendor.bwoester.yii-static-events-component.*',
@@ -140,21 +140,21 @@ $mainConfig = array(
 //             'upload_dir' => 'root.upload.d2files_' . basename(dirname($applicationDirectory)) . '_' . basename($applicationDirectory),
 //             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx|htm)$/i',
 //        ),
-        'email' => array(
-            // path to the EmailModule class
-            'class' => 'vendor.cornernote.yii-email-module.email.EmailModule',
-            // if you downloaded into modules
-            //'class' => 'application.modules.email.EmailModule',
-
-            // add a list of users who can access the email module
-            'adminUsers' => array('Uldis'),
-
-            // set this to false in production to improve performance
-            'autoCreateTables' => false,
-            'modelMap' => array('EmailActiveRecord' => 'email_spool'),
-            'connectionID' => 'db',
-            'yiiStrapPath' => realpath($applicationDirectory . '/../../../vendor/crisu83/yiistrap'),
-        ),        
+//        'email' => array(
+//            // path to the EmailModule class
+//            'class' => 'vendor.cornernote.yii-email-module.email.EmailModule',
+//            // if you downloaded into modules
+//            //'class' => 'application.modules.email.EmailModule',
+//
+//            // add a list of users who can access the email module
+//            'adminUsers' => array('Uldis'),
+//
+//            // set this to false in production to improve performance
+//            'autoCreateTables' => false,
+//            'modelMap' => array('EmailActiveRecord' => 'email_spool'),
+//            'connectionID' => 'db',
+//            'yiiStrapPath' => realpath($applicationDirectory . '/../../../vendor/crisu83/yiistrap'),
+//        ),        
         
 
         'rights'               => array(
