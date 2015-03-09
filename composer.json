@@ -22,9 +22,8 @@
         "schmunk42/web-user-behavior":"0.1.*",
         "schmunk42/relation" : "1.*",
 
-        "vitalets/x-editable-yii": "dev-master",
+        "vitalets/x-editable-yii": "1.3.2",
         
-        "uldisn/ace": "dev-master",
         "uldisn/yii-user": "dev-master",
         
         "dbrisinajumi/audittrail": "dev-master",        
