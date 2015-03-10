@@ -86,9 +86,9 @@ $mainConfig = array(
         'vendor.bwoester.yii-event-interceptor.*',
         'vendor.dbrisinajumi.d2person.*',                
         'vendor.dbrisinajumi.d2person.models.*',                
-        'vendor.dbrkls.edifactdata.*',                
-        'vendor.dbrkls.edifactdata.components.*',        
-        'vendor.dbrkls.edifactdata.models.*',        
+        'vendor.uldisn.edifactdata.*',                
+        'vendor.uldisn.edifactdata.components.*',        
+        'vendor.uldisn.edifactdata.models.*',        
         'vendor.uldisn.ace.*', 
         'vendor.uldisn.ace.widgets.*',         
         'vendor.dbrisinajumi.d2calendar.*',                
@@ -100,7 +100,7 @@ $mainConfig = array(
             'class' => 'vendor.dbrisinajumi.d2calendar.D2calendarModule',
         ),        
         'edifactdata' => array(
-            'class' => 'vendor.dbrkls.edifactdata.EdifactDataModule',
+            'class' => 'vendor.uldisn.edifactdata.EdifactDataModule',
         ),        
         'session' => array (
             'sessionName' => 'kods',
