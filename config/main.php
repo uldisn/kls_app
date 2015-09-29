@@ -93,11 +93,16 @@ $mainConfig = array(
         'vendor.uldisn.ace.widgets.*',         
         'vendor.dbrisinajumi.d2calendar.*',                
         'vendor.dbrisinajumi.d2calendar.models.*', 
-         'vendor.dbrkls.edifact.src.EDI.*',
+        'vendor.dbrkls.edifact.src.EDI.*',
+        'vendor.uldisn.ldm.*',
+        'vendor.uldisn.ldm.models.*',
     ),
     'modules'    => array(
         'd2calendar'=> array( 
             'class' => 'vendor.dbrisinajumi.d2calendar.D2calendarModule',
+        ),        
+        'ldm'=> array( 
+            'class' => 'vendor.uldisn.ldm.LdmModule',
         ),        
         'edifactdata' => array(
             'class' => 'vendor.uldisn.edifactdata.EdifactDataModule',
@@ -186,14 +191,11 @@ $mainConfig = array(
                 ),
 			),
             'UserAdminRoles' => array(
-                'Agent',
+
                 'UserAdmin',
                 'audittrail',
-                'Lawyer',
-                'Manager',
-                'Client',
-                'Accountant',
                 'Administrator',
+                'Orders'
 			),
             'layout' =>'//layouts/ace',
             'view' => 'vendor.uldisn.ace.yii-user.views',            
