@@ -195,7 +195,8 @@ $mainConfig = array(
                 'UserAdmin',
                 'audittrail',
                 'Administrator',
-                'Orders'
+                'Orders',
+                'OrdersAdmin'
 			),
             'layout' =>'//layouts/ace',
             'view' => 'vendor.uldisn.ace.yii-user.views',            
