@@ -4,7 +4,7 @@
 
 <ul class="unstyled spaced">
     <li><i class="icon-ok green"></i>Uldis Nelsons</li>
-    <li><i class="icon-ok green"></i><a href="maui:uldis@weberp.lv">uldis@weberp.lv</a></li>
+    <li><i class="icon-ok green"></i><a href="mailto:uldis@weberp.lv">uldis@weberp.lv</a></li>
     <li><i class="icon-ok green"></i><a href="http://www.weberp.lv">www.weberp.lv</a></li>
 </ul>
 <h2>Used technology</h2>
