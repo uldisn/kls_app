@@ -96,26 +96,26 @@ $this->widget(
             'class' => 'vendor.uldisn.ace.widgets.TbAceHrMenu',
             'htmlOptions' => array('class' => 'ace-nav pull-right'),
             'items' => array(
-                $aMenuOfficeCompanies,
-                array(
-                    'label' => Yii::app()->language,
-                    'icon' => 'globe white',
-                    'url' => '#',
-                    //'itemCssClass' => 'light-blue',
-                    'items' => array(
-                        array(
-                            'label' => Yii::t('app', 'Languages')
-                            ),
-                        array(
-                            'label' => 'English',
-                            'url' => array_merge(array(''), $_GET, array('lang' => 'en'))
-                        ),
-                        array(
-                            'label' => 'Latviešu',
-                            'url' => array_merge(array(''), $_GET, array('lang' => 'lv'))
-                        ),
-                    ),
-                ),
+//                $aMenuOfficeCompanies,
+//                array(
+//                    'label' => Yii::app()->language,
+//                    'icon' => 'globe white',
+//                    'url' => '#',
+//                    //'itemCssClass' => 'light-blue',
+//                    'items' => array(
+//                        array(
+//                            'label' => Yii::t('app', 'Languages')
+//                            ),
+//                        array(
+//                            'label' => 'English',
+//                            'url' => array_merge(array(''), $_GET, array('lang' => 'en'))
+//                        ),
+//                        array(
+//                            'label' => 'Latviešu',
+//                            'url' => array_merge(array(''), $_GET, array('lang' => 'lv'))
+//                        ),
+//                    ),
+//                ),
                 array(
                     'label' => (Yii::app()->user->isGuest?Yii::app()->user->name:$user->profile->first_name." ".$user->profile->last_name."(".ucfirst(Yii::app()->user->name).")"),
                     'visible' => !Yii::app()->user->isGuest,

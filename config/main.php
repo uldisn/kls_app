@@ -346,7 +346,7 @@ $mainConfig = array(
         ),
         'langHandler'   => array(
             'class'     => 'vendor.phundament.p3extensions.components.P3LangHandler',
-            'languages' => array('en', 'lt','lv','ru') // available languages 'ru', 'fr'
+            'languages' => array('en') // available languages , 'lt','lv','ru'
         ),
         'userCompany'   => array(
             'class'     => 'vendor.dbrisinajumi.d2company.components.companyHandler',
