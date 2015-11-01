@@ -140,11 +140,11 @@ $mainConfig = array(
 //             'upload_dir' => 'root.eu_upload',
 //             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx)$/i',
 //        ),          
-//        'd2files' => array(
-//             'class' => 'vendor.dbrisinajumi.d2files.D2filesModule',
-//             'upload_dir' => 'root.upload.d2files_' . basename(dirname($applicationDirectory)) . '_' . basename($applicationDirectory),
-//             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx|htm)$/i',
-//        ),
+        'd2files' => array(
+             'class' => 'vendor.dbrisinajumi.d2files.D2filesModule',
+             'upload_dir' => 'root.upload.d2files_' . basename(dirname($applicationDirectory)) . '_' . basename($applicationDirectory),
+             'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx|htm)$/i',
+        ),
 //        'email' => array(
 //            // path to the EmailModule class
 //            'class' => 'vendor.cornernote.yii-email-module.email.EmailModule',
