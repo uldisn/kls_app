@@ -78,6 +78,7 @@ $mainConfig = array(
         'vendor.dbrisinajumi.d1files.models.*',        
         'vendor.dbrisinajumi.d2files.models.*',        
         'vendor.dbrisinajumi.d2files.widgets.*', // shared classes
+        'vendor.dbrisinajumi.d2files.*',        
 //        'vendor.cornernote.yii-email-module.email.models.*',
 //        'vendor.cornernote.yii-email-module.email.components.*',
         'vendor.dbrisinajumi.person.models.*',        
@@ -215,6 +216,29 @@ $mainConfig = array(
 		),
         'audittrail' => array(//++
             'class' => 'vendor.dbrisinajumi.audittrail.AudittrailModule', 
+            'ref_models' => array(
+                'PfOrder' => array(
+                    'PfOrderItems' => 'order_id',
+                    'D2files' => array(
+                        'compare' => array(
+                            'model' => 'ldm.PfOrder',
+                            'model_id' => 'pk_value',
+                            ),
+
+                    ),                    
+                    'yii_t_category' => 'LdmModule.model',
+                    'yii_t_message' => 'Order',                    
+                ),
+                'PfOrderItems' => array(
+                    'yii_t_category' => 'LdmModule.model',
+                    'yii_t_message' => 'Oredr Items',                    
+                ),
+                'D2files' => array(
+                    'hidded_fields' => ['add_datetime','user_id','model','model_id','upload_path'],
+                    'yii_t_category' => 'D2filesModule.crud_static',
+                    'yii_t_message' => 'Order attachments'
+                ),                
+            ),    
         ),        
     ),
     // application components
