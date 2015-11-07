@@ -97,6 +97,7 @@ $mainConfig = array(
         'vendor.dbrkls.edifact.src.EDI.*',
         'vendor.uldisn.ldm.*',
         'vendor.uldisn.ldm.models.*',
+        'vendor.dbrisinajumi.tlbexcelview.*',
     ),
     'modules'    => array(
         'd2calendar'=> array( 
