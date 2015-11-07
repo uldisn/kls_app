@@ -455,6 +455,11 @@ $mainConfig = array(
                     'decimalSeparator' => '.',
                     'rowHeight' => 20,
                 ),
+                'tlbExcel' => array(
+                    'libPath' => 'vendor.phpoffice.phpexcel.Classes.PHPExcel',
+                    'decimalSeparator' => '.',
+                    'rowHeight' => 20,
+                ),
                 'TbBreadcrumbs' => array(
                     //ACE
                     'separator' => '<i class="icon-angle-right arrow-icon"></i>',  
