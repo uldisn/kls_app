@@ -527,6 +527,7 @@ $mainConfig = array(
             'terminal_alt_codes' => array(
                 'RIXCT'  => 'LVRIXCY03',
                 'RIXBCT' => 'LVRIXCY01',
+                'BCT' => 'LVRIXCY01',
             ),
             'movment_times' => array(
                 'LV' => '15:00',
