@@ -53,6 +53,7 @@ $mainConfig = array(
         'application.extensions.jqplot.assets' => 'vendor.dbrisinajumi.yii-jqplot.assets',
         'application.extensions.jqplot.JqplotWidget' => 'vendor.dbrisinajumi.yii-jqplot.JqplotWidget',
         'edifact-parser' => 'vendor.dbrkls.edifact.src.EDI',
+        'edifact-data' => 'vendor.sabas.edifact-data',
     ),
     // autoloading model and component classes
     'import'     => array(
