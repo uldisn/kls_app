@@ -34,7 +34,7 @@
         
         "schmunk42/multi-theme":"0.1.*",
         "phundament/p3extensions":"0.17.*",        
-        "schmunk42/web-user-behavior":"0.1.*",
+        "schmunk42/web-user-behavior":"dev-master",
         "schmunk42/relation" : "1.*",
 
         "vitalets/x-editable-yii": "1.3.2",
