@@ -17,7 +17,12 @@
 	    {
                 "type": "vcs",
                 "url": "https://github.com/edmundspriede/yii-rights.git"
-        }
+        },
+	  {
+                "type": "vcs",
+                "url": "https://github.com/schmunk42/web-user-behavior.git"
+        },     
+	     
       ],
     
      "require": {
