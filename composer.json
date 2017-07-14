@@ -17,7 +17,7 @@
 	    {
                 "type": "vcs",
                 "url": "https://github.com/edmundspriede/yii-rights"
-        },
+        }
       ],
     
      "require": {
