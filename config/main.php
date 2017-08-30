@@ -99,8 +99,18 @@ $mainConfig = array(
         'vendor.uldisn.ldm.*',
         'vendor.uldisn.ldm.models.*',
         'vendor.dbrisinajumi.tlbexcelview.*',
+	    
+	 //LB data exchange
+	'vendor.gatis-ozols.lb.*',                
+        'vendor.gatis-ozols.lb.components.*',        
+        'vendor.gatis-ozols.lb.models.*', 
     ),
     'modules'    => array(
+	 
+	'lb' => array(
+                 'class' => 'vendor.gatis-ozols.lb.LbModule'
+         ),    
+	    
         'd2calendar'=> array( 
             'class' => 'vendor.dbrisinajumi.d2calendar.D2calendarModule',
         ),        
@@ -192,7 +202,9 @@ $mainConfig = array(
                 'audittrail',
                 'Administrator',
                 'Orders',
-                'OrdersAdmin'
+                'OrdersAdmin',
+		'LbOrderAdmin',
+                'LbOrderService'    
 			),
             'layout' =>'//layouts/ace',
             'view' => 'vendor.uldisn.ace.yii-user.views',            
