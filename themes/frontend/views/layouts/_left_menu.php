@@ -130,6 +130,22 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', [
                 ],
             ]
         ],
+        
+        
+        [
+            'label' => Yii::t('dbr_app', 'LB data'),
+            'icon'=>'glass',
+            'visible' => Yii::app()->user->checkAccess('LbOrderAdmin'),
+            'items' => [
+                [
+                    'label' => Yii::t('LbModule.model', 'LB Orders'),
+                    'url' => ['/lb/lbOrder'],
+                    'icon' => 'file-text-alt',
+                    'visible' => Yii::app()->user->checkAccess('Lb.LbOrder.Menu'),
+                ],
+
+            ]
+        ],
         [
             'label' => Yii::t('dbr_app', 'Reports'),
             'icon'=>'book',
@@ -163,3 +179,5 @@ $this->widget('vendor.uldisn.ace.widgets.TbAceMenu', [
     } catch (e) {
     }
 </script>
+
+
