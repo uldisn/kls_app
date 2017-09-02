@@ -258,7 +258,7 @@ $mainConfig = array(
             'useTransparentSessionID' => isset($_POST['PHPSESSID']) ? true : false,
             'autoStart' => 'false',
             'cookieMode' => 'only',
-            'timeout' => 300,
+            'timeout' => 600,
         ),         
         'cache' => array(
             'class' => 'CFileCache',
